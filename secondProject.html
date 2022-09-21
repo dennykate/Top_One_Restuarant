@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/80d04eb4b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="secondProject.css" />
+
+    <title>The One - Speacial Restaurant</title>
+  </head>
+  <body style="transition: 0.5s">
+    <div class="headContainer" id="home">
+      <header>
+        <div class="cartBgColor">
+          <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="sunMoon">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+          </div>
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#promotion">Promotion</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="bar" onclick="showMenu()"></i>
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+      </header>
+      <div class="homeContainer">
+        <div class="leftContainer">
+          <h3 class="name">
+            <span class="bigLetter">T</span>he
+            <span class="bigLetter">O</span>ne
+          </h3>
+          <h5>Special Restaurant</h5>
+          <p>
+            Best Taste, Best service & <br />
+            Best experience
+          </p>
+          <a href="#promotion">Order Now</a>
+        </div>
+        <div class="rightContainer"></div>
+      </div>
+    </div>
+    <!-- Home Section End -->
+
+    <!-- Promotion Section Start -->
+    <div class="forSvg">
+      <svg
+        viewBox="0 0 409 2474"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="draw"
+          d="M205 1C376.2 82.6 276.333 197 205 244C132.333 274.333 4.39999 350.2 74 411C143.6 471.8 183 507.667 194 518C247.667 558.667 304 652 270 685C236 718 89 822 78 832C67 842 -26.2 911 41 943C221.5 1046 444 1031.5 352.5 1125.5C261 1219.5 -0.500023 1307 78 1366.5C156.5 1426 574.5 1491.5 335 1625C95.5 1758.5 -56.5 1832 70.5 1866C197.5 1900 501.5 1982 335 2063C168.5 2144 -86 2240.5 30.5 2304C123.7 2354.8 172 2438.17 184.5 2473.5"
+          stroke="black"
+          stroke-width="1.08779"
+        />
+      </svg>
+
+      <div id="promotion">
+        <div class="promotionTitle">
+          <h2 class="promotionText textColor">
+            <span class="bigLetter">P</span> romotion
+          </h2>
+        </div>
+        <div class="promotionItem row mb-12">
+          <div class="carD" data-aos="slide-left">
+            <div class="cardImage">
+              <img src="./images/promotionImage1.jpg" />
+            </div>
+            <h2 class="promotionItemName">
+              မာလာရှမ်းကော <span class="itemQuantity">2</span> ပွဲ၀ယ်
+            </h2>
+            <h2 class="promotionItemName">
+              Bubble Tea <span class="itemQuantity">1</span>ခွက်လက်ဆောင်
+            </h2>
+            <div class="cardFooter">
+              <h5>
+                Total Price <br />
+                <span class="itemQuantity">10000</span>MMk
+              </h5>
+              <button class="btn btn-success" onclick="promotionItemBtn(1)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="carD" data-aos="slide-up">
+            <div class="cardImage">
+              <img src="./images/promotionImage2.jpg" />
+            </div>
+            <h2 class="promotionItemName">
+              Juice <span class="itemQuantity">3</span>ခွက်၀ယ်
+            </h2>
+            <h2 class="promotionItemName">
+              Bubble Tea <span class="itemQuantity">1</span>ခွက်လက်ဆောင်
+            </h2>
+            <div class="cardFooter">
+              <h5>
+                Total Price <br />
+                <span class="itemQuantity">5000</span>MMk
+              </h5>
+              <button class="btn btn-success" onclick="promotionItemBtn(2)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="carD" data-aos="slide-right">
+            <div class="cardImage">
+              <img src="./images/promotionImage3.jpg" />
+            </div>
+            <h2 class="promotionItemName">
+              Korean Fried Chicken<span class="itemQuantity">1</span> ပွဲ
+            </h2>
+            <h2 class="promotionItemName">
+              Hot Dog whole sausage <span class="itemQuantity">2</span>pcs
+            </h2>
+            <div class="cardFooter">
+              <h5>
+                Total Price <br />
+                <span class="itemQuantity">5000</span>MMk
+              </h5>
+              <button class="btn btn-success" onclick="promotionItemBtn(3)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Promotion Section end -->
+
+      <!-- Menu Section Start  -->
+      <div id="menu">
+        <div class="menuTitle">
+          <h2 class="menuText textColor">
+            <span class="bigLetter">M</span>enu
+          </h2>
+        </div>
+        <div class="menuContainer">
+          <div class="menuList">
+            <h2>တရုတ်အစားအစာများ</h2>
+            <div class="swipe mySwiper">
+              <div class="swiper-wrapper" data-aos="zoom-in">
+                <div class="swiper-slide">
+                  <img src="./images/Mala shang Kaw.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>မာလာရှမ်းကော</h1>
+                    <h1>5000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(0)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-0">0</h5>
+                    <button class="btnPM" onclick="plusBtn(0)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(0)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Mala Hin.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>မာလာဟင်း</h1>
+                    <h1>3500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(1)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-1">0</h5>
+                    <button class="btnPM" onclick="plusBtn(1)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(1)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Myay Oae Mee shay.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>မြေအိုးမြှီးရှည်</h1>
+                    <h1>3000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(2)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-2">0</h5>
+                    <button class="btnPM" onclick="plusBtn(2)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(2)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Fried Noodle.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ခေါက်ဆွဲကြော်</h1>
+                    <h1>2500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(3)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-3">0</h5>
+                    <button class="btnPM" onclick="plusBtn(3)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(3)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/kyar san kyaw.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ကြာဇံကြော်</h1>
+                    <h1>2500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(4)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-4">0</h5>
+                    <button class="btnPM" onclick="plusBtn(4)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(4)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/noodle see kyat.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ခေါက်ဆွဲဆီချက်</h1>
+                    <h1>1500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(5)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-5">0</h5>
+                    <button class="btnPM" onclick="plusBtn(5)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(5)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/kyar san see kyat.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ကြာဇံဆီချက်</h1>
+                    <h1>1500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(6)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-6">0</h5>
+                    <button class="btnPM" onclick="plusBtn(6)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(6)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/shan noodle.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ရှမ်းခေါက်ဆွဲ</h1>
+                    <h1>1500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(7)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-7">0</h5>
+                    <button class="btnPM" onclick="plusBtn(7)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(7)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Hta Min Kyaw.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ထမင်းကြော်</h1>
+                    <h1>2500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(8)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-8">0</h5>
+                    <button class="btnPM" onclick="plusBtn(8)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(8)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Pa Shuu Hta Minn Kyaw.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ပသျှူးထမင်းကြော်</h1>
+                    <h1>2500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(9)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-9">0</h5>
+                    <button class="btnPM" onclick="plusBtn(9)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(9)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Pin Lal Sar Hta Min Kyaw.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ပင်လယ်စာထမင်းကြော်</h1>
+                    <h1>3500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(10)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-10">0</h5>
+                    <button class="btnPM" onclick="plusBtn(10)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(10)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Hta Min Paund.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ထမင်းပေါင်း</h1>
+                    <h1>2500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(11)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-11">0</h5>
+                    <button class="btnPM" onclick="plusBtn(11)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(11)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Kyae Ooh.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ကြေးအိုး</h1>
+                    <h1>4500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(12)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-12">0</h5>
+                    <button class="btnPM" onclick="plusBtn(12)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(12)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/kyar san see kyat.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ကြေးအိုးဆီချက်</h1>
+                    <h1>5000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(13)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-13">0</h5>
+                    <button class="btnPM" onclick="plusBtn(13)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(13)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menuList">
+            <h2>အထောင်းစုံ/အသုပ်စုံ</h2>
+            <div class="swipe mySwiper" data-aos="zoom-in">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/Papaya Htone.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>သဘော်သီးထောင်း</h1>
+                    <h1>1000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(14)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-14">0</h5>
+                    <button class="btnPM" onclick="plusBtn(14)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(14)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Corn Htone.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ပြောင်းဖူးထောင်း</h1>
+                    <h1>1000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(15)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-15">0</h5>
+                    <button class="btnPM" onclick="plusBtn(15)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(15)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Chicken foot htone.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ကြက်ခြေထောက်ထောင်း</h1>
+                    <h1>1000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(16)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-16">0</h5>
+                    <button class="btnPM" onclick="plusBtn(16)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(16)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Chickrn Salad.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ကြက်သားသုပ်</h1>
+                    <h1>2000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(17)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-17">0</h5>
+                    <button class="btnPM" onclick="plusBtn(17)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(17)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Pork Salad.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ဝက်သားသုပ်</h1>
+                    <h1>2000 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(18)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-18">0</h5>
+                    <button class="btnPM" onclick="plusBtn(18)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(18)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Shrimp salad.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>ပုဇွန်သုပ်</h1>
+                    <h1>3500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(19)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-19">0</h5>
+                    <button class="btnPM" onclick="plusBtn(19)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(19)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menuList">
+            <h2>Juice</h2>
+            <div class="swipe mySwiper" data-aos="zoom-in">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/Bubble Tea.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>Bubble Tea</h1>
+                    <h1>1500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(20)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-20">0</h5>
+                    <button class="btnPM" onclick="plusBtn(20)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(20)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Juices.jpg" alt="" />
+                  <div class="priceSlide">
+                    <h1>All Juice</h1>
+                    <h1>1500 ကျပ်</h1>
+                  </div>
+                  <div class="menuCardFooter">
+                    <button class="btnPM" onclick="minusBtn(21)">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <h5 class="menuQuentity menuQuentity-21">0</h5>
+                    <button class="btnPM" onclick="plusBtn(21)">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn btn-success" onclick="menuToCart(21)">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MenuSection End -->
+
+      <!-- Cart Section Start -->
+
+      <div id="cart">
+        <div class="cartTitle">
+          <h2 class="cartTitleName textColor">
+            <span class="bigLetter">C</span>art
+          </h2>
+        </div>
+        <div class="cartContainer">
+          <div class="cartLeftContainer">
+            <div class="cartImageBox" data-aos="fade-up">
+              <img src="./images/cartImageTransForm.png" />
+            </div>
+          </div>
+          <div class="cartRightContainer">
+            <div class="cartListBox" data-aos="fade-up">
+              <div class="cartListHeader">
+                <h2>Name</h2>
+                <h2>Quantity</h2>
+                <h2>Price</h2>
+              </div>
+              <div class="cartOrderList">
+                <!-- <div class="cartOrderItem clearCart-1">
+                         <h2 >Mala Shang Guo</h2>
+                         <h2>1</h2>
+                         <h2 class="cartPrice">5000Kyats</h2>
+                         <button class="cartTrashBtn" onclick="clearCart(1)"><i class="fas fa-trash"></i></button>
+                     </div> -->
+              </div>
+              <div class="cartFooter">
+                <h2 class="totalPrice">0</h2>
+                <button class="bg-success" id="comfirmTotalPrice">
+                  Go to Payment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cart Section End -->
+
+      <!-- Service Section Start -->
+      <div id="service">
+        <div class="serviceTitle">
+          <h2 class="serviceTitleName textColor">
+            <span class="bigLetter">S</span>ervices
+          </h2>
+        </div>
+        <h2 class="aboutService textColor">Our Amazing Service</h2>
+        <div class="serviceContainer">
+          <div class="servicesBox">
+            <img
+              src="./images/excellentFood.png"
+              class="plateImg"
+              data-aos="zoom-out"
+            />
+            <h5 class="text-success" data-aos="fade-up">Excellent Food</h5>
+            <p class="textColor2" data-aos="fade-up">
+              We offers our clients <br />
+              excellent quality services for many years,<br />
+              with the best and delicious foods.
+            </p>
+          </div>
+          <div class="servicesBox fastFood">
+            <img src="./images/fastFood.png" data-aos="zoom-out" />
+            <h5 class="text-success" data-aos="fade-up">Fast Food</h5>
+            <p class="textColor2" data-aos="fade-up">
+              We offers our clients <br />
+              excellent quality services for many years,<br />
+              with the best and delicious foods.
+            </p>
+          </div>
+          <div class="servicesBox fastDelivery">
+            <img src="./images/deliveryTruck2.png" data-aos="zoom-out" />
+            <h5 class="text-success" data-aos="fade-up">Fast Delivery</h5>
+            <p class="textColor2" data-aos="fade-up">
+              We offers our clients <br />
+              excellent quality services for many years,<br />
+              with the best and delicious foods.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Services Section end -->
+
+      <!-- about us section start -->
+      <div id="aboutUs">
+        <div class="serviceTitle">
+          <h2 class="serviceTitleName textColor">
+            <span class="bigLetter">A</span>bout Us
+          </h2>
+        </div>
+        <!-- <input type="text" id="searchPeople" onkeyup="search()"> -->
+        <div class="swiper mYSwiper">
+          <div class="swiper-wrapper nameCardList">
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/generalManager.jpg" alt="" />
+              </div>
+              <h2>John Cruis</h2>
+              <p>General Manager</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/assistantManager.jpg" alt="" />
+              </div>
+              <h2>Freya</h2>
+              <p>Assistant Manager</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/ExecutiveChef.jpg" alt="" />
+              </div>
+              <h2>Harry Noah</h2>
+              <p>Executive Chef</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/socusChef.jpg" alt="" />
+              </div>
+              <h2>Reyansh</h2>
+              <p>Sous Chef</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/pastryChef.jpg" alt="" />
+              </div>
+              <h2>Grace</h2>
+              <p>Pastry Chef</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/kitchenManager.jpg" alt="" />
+              </div>
+              <h2>Harry</h2>
+              <p>Kitchen Manager</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/foodAndBeraveManager.jpg" alt="" />
+              </div>
+              <h2>Coraline</h2>
+              <p>Food & Beverage Manager</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/lineCook.jpg" alt="" />
+              </div>
+              <h2>Lucas</h2>
+              <p>Line Cook</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/fastFoodCook.png" alt="" />
+              </div>
+              <h2>Arthur</h2>
+              <p>Fast Food Cook</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/sommelier.jpg" alt="" />
+              </div>
+              <h2>Adam</h2>
+              <p>Sommelier</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/busser1.jpg" alt="" />
+              </div>
+              <h2>Micheal</h2>
+              <p>Busser</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/busser2.png" alt="" />
+              </div>
+              <h2>Jordan</h2>
+              <p>Busser</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/caisher.jpg" alt="" />
+              </div>
+              <h2>Jassica</h2>
+              <p>Cashier</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/waiter1.jpg" alt="" />
+              </div>
+              <h2>Chris Brown</h2>
+              <p>Waiter</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/waiter2.jpg" alt="" />
+              </div>
+              <h2>Kane</h2>
+              <p>Waiter</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/waiter3.jpg" alt="" />
+              </div>
+              <h2>Antony</h2>
+              <p>Waiter</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/waitress2.jpg" alt="" />
+              </div>
+              <h2>Suzzy</h2>
+              <p>Waitress</p>
+            </div>
+            <div class="swiper-slide jobPosition">
+              <div class="aboutImgBox">
+                <img src="./images/waitress1.jpg" alt="" />
+              </div>
+              <h2>Jennifer</h2>
+              <p>Waitress</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- About Us Section End -->
+
+      <!-- Contact Section Start -->
+      <div id="contact">
+        <div class="serviceTitle contactTitle">
+          <h2 class="serviceTitleName textColor">
+            <span class="bigLetter">C</span>ontact
+          </h2>
+        </div>
+        <div class="contactContainer">
+          <div class="leftContact" data-aos="zoom-in">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4350.1765629703505!2d96.15391827570691!3d16.776497881637624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed3d9f9232b1%3A0x2c673a4a5369bcc0!2sThein%20Gyi%20Zay!5e0!3m2!1sen!2sid!4v1646292776388!5m2!1sen!2sid"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="rightContact">
+            <div class="contactInfo" data-aos="zoom-in">
+              <h2>Contact Info</h2>
+              <h5><i class="fa-solid fa-phone"></i> +959969969969</h5>
+              <h5>
+                <i class="fa-brands fa-facebook-square"></i>
+                <a href="#">The One - Special Restaurant</a>
+              </h5>
+              <h5>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="#">theonespecialrestaurant@gmail.com</a>
+              </h5>
+              <h5>
+                <i class="fa-solid fa-home"></i>
+                <a href="#">No(106), Konzedan St, Yangon, Myanmar </a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section End -->
+
+      <!-- Footer Section Start -->
+      <div class="footer">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#promotion">Promotion</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#aboutUs">Our Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="./images/visaMaster.png" alt="" />
+      </div>
+    </div>
+    <div class="copyRight">
+      <h2 class="copyRightLetter">
+        &copy;2022 All Rights Reserved | Created by <a href="#">Kate</a>
+      </h2>
+    </div>
+    <!-- Footer Section end -->
+
+    <!-- For Floating Icon -->
+    <a href="#home" class="floatIcon"><i class="fa-solid fa-angle-up"></i></a>
+    <!-- End For Floating Icon -->
+
+    <!-- for success box -->
+    <div class="alertOrder successBox">
+      <div class="alertBox">
+        <div class="alertImageBox">
+          <img src="./images/fail.jpg" alt="" />
+        </div>
+        <h2>မိတ်ဆွေ၏ လုပ်ဆောင်မှုအောင်မြင်ပါသည်</h2>
+        <button onclick="clearSuccessBox()">
+          <i class="fa-solid fa-square-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <!-- End For Success Box -->
+
+    <!-- For Fail Box -->
+    <div class="alertOrder failBox">
+      <div class="alertBox">
+        <div class="alertImageBox">
+          <img src="./images/success.jpg" alt="" />
+        </div>
+        <h2>မိတ်ဆွေ၏ လုပ်ဆောင်မှုမှားယွင်းနေပါသည်</h2>
+        <button onclick="clearfailBox()">
+          <i class="fa-solid fa-square-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <!-- End For fail Box -->
+
+    <div class="checkOut">
+      <div class="checkOutBox">
+        <h2>Information & Payment</h2>
+        <div class="names">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input
+          type="text"
+          class="address"
+          placeholder="Apartment,suite,etc ( optional )"
+        />
+        <input type="text" class="address" placeholder="City" />
+        <input type="text" class="address" placeholder="Phone" />
+        <label for="paymentMethods" class="paymentMethods"
+          >Payment Methods</label
+        >
+        <select id="paymentMethods">
+          <option>Visa</option>
+          <option>Master</option>
+          <option>Discover</option>
+          <option>American Express</option>
+        </select>
+        <img src="./images/visaMaster.png" class="paymentMethodsImage" />
+        <input type="text" class="cardNumber" placeholder="Card Number" />
+        <span class="expiration">Expiration :</span>
+        <input type="date" class="cardDate" />
+        <div class="checkOutFooter">
+          <h2 class="finalPrice">0</h2>
+          <div>
+            <span class="percentage"></span>
+            <button class="bg-success" onclick="lastComfirm()">Comfirm</button>
+          </div>
+        </div>
+        <button class="backToHome" title="Back to Home Page">Back</button>
+      </div>
+    </div>
+
+    <!-- On Scroll Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 350,
+      });
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // This is search engine test
+      // function search(){
+      //     const searchPeople = document.querySelector("#searchPeople").value.toUpperCase()
+      //     const nameCardList = document.querySelector(".nameCardList")
+      //     const nameCard = document.querySelectorAll(".jobPosition")
+      //     const names = nameCardList.querySelectorAll("h2")
+      //     const jobs = nameCardList.querySelectorAll("p")
+
+      //     for(let i = 0 ; i < names.length ; i++){
+      //         let matchNames = nameCard[i].getElementsByTagName("h2")[0]
+      //         let matchJobs = nameCard[i].getElementsByTagName("p")[0]
+
+      //         if( matchNames || matchJobs ){
+      //             let matchNamesText = matchNames.textContent
+      //             let matchJobsText = matchJobs.textContent
+
+      //             if( matchNamesText.toUpperCase().indexOf(searchPeople) > -1 ||  matchJobsText.toUpperCase().indexOf(searchPeople) > -1 ){
+      //                 nameCard[i].style.display = ""
+      //             }else{
+      //                 nameCard[i].style.display = "none"
+      //             }
+      //         }
+      //     }
+      // }
+      // This is search engine test
+
+      //  For Menu Card
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+
+      // For Scroll Nav Bar Effect
+      window.addEventListener("scroll", () => {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", scrollY > 1);
+        var floatIcon = document.querySelector(".floatIcon");
+        floatIcon.classList.toggle("showFloatIcon", scrollY > 2500);
+      });
+
+      // For Dark and Light Mood
+      let darkLight = document.querySelector(".sunMoon");
+      let body = document.querySelector("body");
+      let sun = document.querySelector(".fa-sun");
+      let moon = document.querySelector(".fa-moon");
+      let textColor = document.querySelectorAll(".textColor");
+      let textColor2 = document.querySelectorAll(".textColor2");
+
+      sun.addEventListener("click", () => {
+        body.style.backgroundColor = "rgb(255,255,255)";
+        sun.style.display = "none";
+        moon.style.display = "block";
+        for (let i = 0; i < textColor.length; i++) {
+          textColor[i].style.color = "#000";
+        }
+        for (let i = 0; i < textColor2.length; i++) {
+          textColor2[i].style.color = "#000";
+        }
+        document.querySelector(".copyRight").style.backgroundColor = "#000";
+        document.querySelector(".copyRightLetter").style.color = "#fff";
+        document.querySelector(".draw").style.stroke = "rgba(0, 0, 0, 0.7)";
+      });
+      moon.addEventListener("click", () => {
+        body.style.backgroundColor = "rgb(0,0,0, 0.8)";
+        moon.style.display = "none";
+        sun.style.display = "block";
+        for (let i = 0; i < textColor.length; i++) {
+          textColor[i].style.color = "#fff";
+        }
+        for (let i = 0; i < textColor2.length; i++) {
+          textColor2[i].style.color = "rgb(255,255,255,0.8)";
+        }
+        document.querySelector(".copyRight").style.backgroundColor = "#fff";
+        document.querySelector(".copyRightLetter").style.color = "#000";
+        document.querySelector(".draw").style.stroke =
+          "rgba(255, 255, 255, 0.7)";
+      });
+
+      // For Nav Toggle Bar
+      let menuBar = document.querySelector(".menu");
+      let bar = document.querySelector("#bar");
+      let faBars = document.querySelector(".fa-bars");
+      let xMark = document.querySelector(".fa-xmark");
+
+      function showMenu() {
+        menuBar.classList.add("menuShow");
+        faBars.classList.add("none");
+        xMark.classList.add("block");
+      }
+      function hideMenu() {
+        menuBar.classList.remove("menuShow");
+        faBars.classList.remove("none");
+        xMark.classList.remove("block");
+      }
+
+      // For Menu Quantity Number
+      let e = 0;
+
+      function plusBtn(i) {
+        e++;
+        document.querySelector(`.menuQuentity-${i}`).textContent = e;
+      }
+      function minusBtn(i) {
+        e--;
+        if (e < 0) {
+          e = 0;
+        }
+        document.querySelector(`.menuQuentity-${i}`).textContent = e;
+      }
+
+      // For Promotion Item To Add Cart
+      let cartOrderList = document.querySelector(".cartOrderList");
+      let totalPrice = document.querySelector(".totalPrice");
+      let finalPrice = document.querySelector(".finalPrice");
+      let addTotalPrice = 0;
+      let reducePrice = 0;
+      let realPrice = 0;
+
+      let x = 0; //x for promotion item's name
+      let y = 0; //y for promotion item's quantity
+      let z = 0; //z for promotion item's price
+      let a = 0; //a is number to clear cart item list
+
+      function promotionItemBtn(i) {
+        if (i === 1) {
+          x = "Set A";
+          y = 3;
+          z = 10000;
+        } else if (i === 2) {
+          x = "Set B";
+          y = 4;
+          z = 5000;
+        } else if (i === 3) {
+          x = "Set C";
+          y = 3;
+          z = 5000;
+        }
+        cartList(x, y, z);
+      }
+
+      // For Adding Menu Order to cart
+      function menuToCart(i) {
+        if (e === 0) {
+          document.querySelector(".failBox").style.display = "flex";
+          setTimeout(() => {
+            document.querySelector(".failBox").style.display = "none";
+          }, 2000);
+        } else {
+          if (i === 0) {
+            x = "မာလာရှမ်းကော";
+            y = e;
+            z = 5000 * y;
+          } else if (i === 1) {
+            x = "မာလာဟင်း";
+            y = e;
+            z = 3500 * y;
+          } else if (i === 2) {
+            x = "မြေအိုးမြှီးရှည်";
+            y = e;
+            z = 3000 * y;
+          } else if (i === 3) {
+            x = "ခေါက်ဆွဲကြော်";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 4) {
+            x = "ကြာဇံကြော်";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 5) {
+            x = "ခေါက်ဆွဲဆီချက်";
+            y = e;
+            z = 1500 * y;
+          } else if (i === 6) {
+            x = "ကြာဇံဆီချက်";
+            y = e;
+            z = 1500 * y;
+          } else if (i === 7) {
+            x = "ရှမ်းခေါက်ဆွဲ";
+            y = e;
+            z = 1500 * y;
+          } else if (i === 8) {
+            x = "ထမင်းကြော်";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 9) {
+            x = "ပသျှူးထမင်းကြော်";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 10) {
+            x = "ပင်လယ်စာထမင်းကြော်";
+            y = e;
+            z = 3500 * y;
+          } else if (i === 11) {
+            x = "ထမင်းပေါင်း";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 12) {
+            x = "ကြေးအိုး";
+            y = e;
+            z = 4500 * y;
+          } else if (i === 13) {
+            x = "ကြေးအိုးဆီချက်";
+            y = e;
+            z = 5000 * y;
+          } else if (i === 14) {
+            x = "သဘော်သီးထောင်း";
+            y = e;
+            z = 1000 * y;
+          } else if (i === 15) {
+            x = "ပြောင်းဖူးထောင်း";
+            y = e;
+            z = 1000 * y;
+          } else if (i === 16) {
+            x = "ကြက်ခြေထောက်ထောင်း";
+            y = e;
+            z = 1000 * y;
+          } else if (i === 17) {
+            x = "ကြက်သားသုပ်";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 18) {
+            x = "ဝက်သားသုပ်";
+            y = e;
+            z = 2500 * y;
+          } else if (i === 19) {
+            x = "ပုဇွန်သုပ်";
+            y = e;
+            z = 3500 * y;
+          } else if (i === 20) {
+            x = "Bubble Tea";
+            y = e;
+            z = 1500 * y;
+          } else if (i === 21) {
+            x = "Juice";
+            y = e;
+            z = 1500 * y;
+          }
+
+          cartList(x, y, z);
+          e = 0;
+          document.querySelector(`.menuQuentity-${i}`).textContent = e;
+        }
+      }
+
+      // Cart List Function
+      function cartList(x, y, z) {
+        document.querySelector(".successBox").style.display = "flex";
+        setTimeout(() => {
+          document.querySelector(".successBox").style.display = "none";
+        }, 2000);
+
+        let cartOrderItem = document.createElement("div");
+        cartOrderItem.classList.add("cartOrderItem", `clearCart-${a}`);
+        cartOrderItem.setAttribute("data-aos", "fade");
+
+        let cartOrderName = document.createElement("h2");
+        cartOrderName.textContent = x;
+        cartOrderItem.append(cartOrderName);
+
+        let cartOrderQuantity = document.createElement("h2");
+        cartOrderQuantity.textContent = y;
+        cartOrderItem.append(cartOrderQuantity);
+
+        let cartOrderPrice = document.createElement("h2");
+        cartOrderPrice.textContent = z;
+        cartOrderPrice.classList.add(`cartPrice-${a}`, "cartPrice");
+        cartOrderItem.append(cartOrderPrice);
+
+        let cartTrashBtn = document.createElement("button");
+        cartTrashBtn.classList.add("cartTrashBtn");
+        cartTrashBtn.setAttribute("onclick", `clearCart(${a})`);
+
+        let trashIcon = document.createElement("i");
+        trashIcon.classList.add("fas", "fa-trash");
+        cartTrashBtn.append(trashIcon);
+        cartOrderItem.append(cartTrashBtn);
+        a++;
+        cartOrderList.append(cartOrderItem);
+
+        addTotalPrice += parseInt(z);
+        totalPrice.textContent = addTotalPrice;
+      }
+
+      // For clear cart
+      function clearCart(i) {
+        document.querySelector(`.clearCart-${i}`).style.display = "none";
+        reducePrice = document.querySelector(`.cartPrice-${i}`).innerText;
+        addTotalPrice -= reducePrice;
+        totalPrice.textContent = addTotalPrice;
+      }
+
+      // For clear success box
+      function clearSuccessBox() {
+        document.querySelector(".successBox").style.display = "none";
+      }
+
+      function clearfailBox() {
+        document.querySelector(".failBox").style.display = "none";
+      }
+
+      // For payment box
+      let comfirmTotalPrice = document.querySelector("#comfirmTotalPrice");
+      let input = document.querySelectorAll("input");
+      let percentage = document.querySelector(".percentage");
+      let percentageNumber = 0;
+      let interval;
+
+      comfirmTotalPrice.addEventListener("click", () => {
+        document.querySelector(".checkOut").style.transform = "translateY(0)";
+        finalPrice.textContent = addTotalPrice;
+      });
+      function lastComfirm() {
+        if (finalPrice.textContent === "0") {
+          percentage.textContent = "Can't Perform Because of 0 Kyats";
+        } else if (input[0].value === "") {
+          percentage.textContent = "Please add all details";
+        } else if (input[1].value === "") {
+          percentage.textContent = "Please add all details";
+        } else if (input[2].value === "") {
+          percentage.textContent = "Please add all details";
+        } else if (input[3].value === "") {
+          percentage.textContent = "Please add all details";
+        } else if (input[4].value === "") {
+          percentage.textContent = "Please add all details";
+        } else if (input[5].value === "") {
+          percentage.textContent = "Please add all details";
+        } else if (input[6].value === "") {
+          percentage.textContent = "Please add all details";
+        } else {
+          for (let i = 0; i < input.length; i++) {
+            input[i].value = "";
+          }
+          interval = setInterval(() => {
+            percentageNumber += 1;
+            percentage.textContent = `${percentageNumber}%`;
+            if (percentageNumber === 100) {
+              percentage.textContent = `Payment Successful`;
+              clearInterval(interval);
+              percentageNumber = 0;
+              addTotalPrice = 0;
+              finalPrice.textContent = addTotalPrice;
+              totalPrice.textContent = addTotalPrice;
+              setTimeout(() => {
+                percentage.textContent = "";
+                document.querySelector(".checkOut").style.transform =
+                  "translateY(-100vh)";
+
+                for (
+                  let i = 0;
+                  i < document.querySelectorAll(".cartOrderItem").length;
+                  i++
+                ) {
+                  document.querySelectorAll(".cartOrderItem")[i].style.display =
+                    "none";
+                }
+              }, 2000);
+            }
+          }, 100);
+
+          document.querySelector("select").value = "Visa";
+        }
+      }
+
+      // For clear payment box
+      let backToHome = document.querySelector(".backToHome");
+      backToHome.addEventListener("click", () => {
+        document.querySelector(".checkOut").style.transform =
+          "translateY(-100vh)";
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mYSwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 60,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
